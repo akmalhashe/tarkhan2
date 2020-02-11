@@ -1,0 +1,206 @@
+/*--------------------------------------------------------------
+# Global defination of elements
+--------------------------------------------------------------*/
+img { max-width: 100%; height: auto; }
+a { color: #000000; }
+a,
+a:hover,
+a:focus { text-decoration: none; }
+a:hover { color: #b51e12; }
+h1, .h1 { font-size: 36px;font-family: 'Lato', sans-serif; }
+h2, .h2 { font-size: 30px;font-family: 'Lato', sans-serif; }
+h3, .h3 { font-size: 26px;font-family: 'Lato', sans-serif; }
+h4, .h4 { font-size: 19px;font-family: 'Lato', sans-serif; }
+h5, .h5 { font-size: 18px; }
+h6, .h6 { font-size: 16px; }
+body { font-size: 16px; font-weight: 400; font-family: 'Montserrat', sans-serif; color: #666666;  }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 700; color: #000;line-height: 1.2; margin: 5px 0 10px; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 18px; }  
+p { margin-bottom: 10px; }
+.clearboth::before,
+.clearboth::after { content: ""; display: table; clear: both; }
+.ex-container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+/*--------------------------------------------------------------
+# Header Layout
+--------------------------------------------------------------*/
+.main-header {padding-top: 15px;}
+.main-logo {display: inline-block; margin-bottom: 15px;}
+.top-widget-bar {display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 15px;}
+.top-widget-bar a,
+a.widget-item {color: #7c868d; font-size: 14px; font-weight: 700;}
+.widget-icon {color: #7c868d;}
+.search-form-wrapper {display: none;}
+/* .main-navigation {display: none;} */
+.main-color--bg {background-color: #5b6770; color: #ffffff;}
+.main-color--bg a { color: #ffffff; } 
+.grey-info {padding: 10px; margin-bottom: 15px;}
+.grey-info-text {margin: 0; text-align: center;}
+.gi-left {margin-bottom: 10px;}
+.gi-call-us {display: block; margin-top: 5px;}
+
+/*--------------------------------------------------------------
+# Banner Section Layout
+--------------------------------------------------------------*/
+.main-banner {margin-bottom: 15px;}
+.md-item-details {background-color: #ffffff; padding: 5px 0; }
+.mi-title {font-style: italic;  font-weight: 400; margin: 5px 0;}
+.mi-price {font-weight: 500; font-style: italic; color: #1d252c;}
+.mi-order {background-color: #9c0400; color: #ffffff; text-transform: uppercase; display: block; padding: 5px 10px;}
+
+
+/*--------------------------------------------------------------
+# Featured Categories Section Layout
+--------------------------------------------------------------*/
+.section-title { font-weight: 300; font-style: italic; color: #b51e12; margin-bottom: 15px; }
+.section-title small {font-style: normal; font-weight: 600; text-transform: uppercase; color: #000; display: block; }
+
+/* Featured Category item */
+.featured-cat-item {display: block; position: relative;margin-bottom: 15px;}
+.featured-cat-item img {display: block; width: 100%;}
+.fci-title {font-style: italic; position: absolute; top: 0; left: 0; margin: 10px 0 0 15px;}
+.hover-icon {width: 50px; height: 50px; line-height: 50px !important; text-align: center; background-color: #ffffff; border-radius: 50%; position: absolute; right: 0; bottom: 0; margin-right: 15px; margin-bottom: 10px;}
+
+/*--------------------------------------------------------------
+# Slick Slider Styles
+--------------------------------------------------------------*/
+.slick-dots {margin: 0; padding: 0; list-style: none; display: flex; flex-direction: row; justify-content: center; }
+
+.slick-dots li button {
+    background: none;
+    box-shadow: none;
+    border: 2px solid #666;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: -999px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px;
+}
+.slick-dots li.slick-active button { background-color: #666666; }
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media ( min-width: 768px ) {
+    h1, .h1 { font-size: 38px; }
+    h2, .h2 { font-size: 32px; }
+    h3, .h3 { font-size: 28px; }
+    h4, .h4 { font-size: 20px; }
+    h5, .h5 { font-size: 20px; }
+    h6, .h6 { font-size: 18px; }
+    
+    body {font-size: 16px;}
+    .ex-container {
+        max-width: 740px;
+    }
+
+    .gi-left {
+        margin-bottom: 5px;
+    }
+    .gi-call-us {
+        display: inline-block;
+        margin-top: 0;
+    }
+    .top-widget-bar {
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 50px;
+        margin: 0;
+    }
+    .top-widget-bar a, a.widget-item {margin-left: 10px; margin-right: 10px;}
+    .mb-item {position: relative;}
+    .md-item-details { padding: 10px 20px;}
+    .mb-items {max-height: 290px; overflow: hidden;} 
+    .mb-items.slick-initialized {max-height: none;}
+    .mb-details-wrapper {position: absolute; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.8);}
+    .mb-items .slick-dots {position: absolute; left: 0; bottom: 0;margin-left: 10px;}
+    .mb-items .slick-dots li button { border-color:#fff; }
+    .mb-items .slick-dots li.slick-active button { background-color: #ffffff; }
+
+    /* above the fold ends here, rest of the template styles */
+
+    
+}
+
+@media ( min-width: 992px ) {
+    .ex-container {max-width: 980px;}
+    .hover-icon{visibility: hidden; opacity: 0; transition: all linear 0.5s; }
+    .featured-cat-item:hover .hover-icon{visibility: visible; opacity: 1;}
+    .featured-cat-item:hover img {filter: grayscale(100%);}
+    .featured-cat-item img {transition: all linear 0.5s;}
+
+}
+
+@media ( min-width: 1200px ) {
+    h1, .h1 { font-size: 50px; }
+    h2, .h2 { font-size: 38px; }
+    h3, .h3 { font-size: 30px; }
+    h4, .h4 { font-size: 22px; }
+    h5, .h5 { font-size: 20px; }
+    h6, .h6 { font-size: 18px; }
+    .container {
+        max-width: 1170px;
+    }
+    .ex-container {
+        max-width: 1180px;
+    }
+    /* Header */
+    .main-header {
+        padding-top: 30px;
+    }
+    .top-widget-bar {
+        min-height: 80px;
+    }
+    .grey-info {
+        padding: 10px 20px;
+    }
+    .grey-info-text {
+        margin: 0;
+        text-align: left;
+        width: 50%;
+        float: left;
+        font-size: 18px;
+        font-style: italic;
+        font-family: "Lato";
+    }
+    .gi-right {text-align: right;}
+    .grey-bar-link  {text-transform: uppercase;}
+    /* banner */
+    .md-item-details {
+        padding: 10px 30px;
+    }
+    .mi-order {
+        padding: 5px 30px;
+    }
+    
+    /* Featured Categories */
+    .featured-categories-wrapper .section-title {text-align: center;}
+    .hover-icon{
+        
+        box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.2);
+        
+        width: 60px;
+        height: 60px;
+        line-height: 60px !important;}
+    .fc-content {margin-bottom: 50px; text-align: center;}
+    .fc-content p:last-child {margin-bottom: 0;}
+    .featured-cat-item {
+        margin-bottom: 30px;
+    }
+}
+@media ( min-width: 1300px ) {
+.ex-container {max-width: 94%;}
+}
+@media ( min-width: 1590px ) {
+    h1, .h1 { font-size: 60px; }
+    h2, .h2 { font-size: 48px; }
+    h3, .h3 { font-size: 36px; }
+    h4, .h4 { font-size: 24px; }
+    h5, .h5 { font-size: 22px; }
+    h6, .h6 { font-size: 18px; }
+    body {font-size: 16px;}
+    .ex-container {
+        width: 1570px;
+    }
+}

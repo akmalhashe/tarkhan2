@@ -1,0 +1,265 @@
+/*!
+Theme Name: TarkhanPK
+Author: WP Team
+Version: 3.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: h3
+Tags: mobile-first, speed-optimized, custom-backgrounds, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*--------------------------------------------------------------
+# Highest Quality Tagline Layout
+--------------------------------------------------------------*/
+.highest-quality {background: url(images/tagline-bg.jpg) no-repeat left top / cover; padding: 65px 15px 65px 35px; text-align: center; margin-bottom: 15px;}
+.hq-tagline {font-weight: 300; font-style: italic; color: #ffffff;}
+.hq-tagline strong {font-weight: 900;}
+
+/*--------------------------------------------------------------
+# Featured Product / Product Layout
+--------------------------------------------------------------*/
+/* General Product Layout */
+.xo-product {margin-bottom: 15px;}
+.xo-product a {display: block;}
+.xo-product-image {margin-bottom: 10px;}
+.xo-product-image img {display: block;}
+.xo-product-title {font-weight: 400; margin-bottom: 5px; color: #666666;  }
+.xo-product-price {font-style: italic; font-weight: 700;}
+
+/* Only Featured Product Styles */
+.featured-products-wrapper .xo-product-details span.fa {display: none;}
+.featured-products-wrapper .xo-product-title {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+}
+/*--------------------------------------------------------------
+# Welcome Tarkhan Layout
+--------------------------------------------------------------*/
+.welcome-tarkhan { background: #f0f0f0 url(images/about-tarkhan-mobile.jpg) center center / contain no-repeat; padding: 10px 0; margin-bottom: 15px; }
+
+.readmore {font-weight: 700; text-transform: uppercase; color: #b51e12;}
+
+/*--------------------------------------------------------------
+# Latest Products Styles
+--------------------------------------------------------------*/
+.latest-products-wrapper {
+    margin: 0 0 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Slick Slider Styles
+--------------------------------------------------------------*/
+.slick-dots {margin: 0; padding: 0; list-style: none; display: flex; flex-direction: row; justify-content: center; }
+
+.slick-dots li button {
+    background: none;
+    box-shadow: none;
+    border: 2px solid #666;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px;
+}
+.slick-dots li.slick-active button { background-color: #666666; }
+
+/*--------------------------------------------------------------
+# On Sale Styles
+--------------------------------------------------------------*/
+.on-sale-wrapper .xo-product-title {color: #666666;}
+.on-sale-wrapper .osi-sale-icon {
+    float: left;
+    line-height: 35px;
+    width: 60px; 
+    height: 35px;
+    text-align: center;
+    color: #b51e12;
+}
+.on-sale-wrapper .xo-product-title,
+.xo-product-price,
+.xo-product-sale-price { display: inline-block; margin-top: 0;}
+.on-sale-wrapper .xo-product-title {width: calc(100% - 60px);}
+.xo-product-sale-price {margin-left: 25px;}
+.on-sale-wrapper .xo-product-price{ text-decoration: line-through; }
+
+/*--------------------------------------------------------------
+# Get Quote images
+--------------------------------------------------------------*/
+.quote-images {position: relative; }
+.big-image-qutoe {position: absolute; left: 0; top: 0; max-width: 100%;}
+.small-image-qutoe {}
+.qi-position {text-align: center;}
+
+/*--------------------------------------------------------------
+# Decor Ideas
+--------------------------------------------------------------*/
+.decor-image {display: none;}
+.decor-item {margin-bottom: 10px;}
+.di-title {font-style: italic; color: #1d252c;}
+.di-details {color: #1d252c;}
+.di-details .inner_skin{display: block; padding-bottom: 10px;}
+.di-readmore {color: #a3aaae; text-transform: lowercase; font-weight: 500;}
+.di-readmore .fa {color: #b51e12;}
+
+/*--------------------------------------------------------------
+# Footer Layout
+--------------------------------------------------------------*/
+/* Footer top grey bar */
+.footer-top {background-color: #5b6770;padding: 20px 0 5px 0;}
+.footer-nav ul {margin: 0; padding:0; list-style: none; margin-bottom: 15px;}
+.footer-nav ul::before,
+.footer-nav ul::after {display: table; content: ""; clear: both;}
+.footer-nav li {float: left; width: 50%;}
+.footer-nav li a {color: #fff; font-weight: 500; font-size: 14px;}
+.footer-nav li a:hover {color: #1d252c;}
+.go-back-top {text-align: right; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+/* .gb-anchor {display: inline-block; width: 60px; height: 60px; line-height: 60px; background-color: #323e48; border-radius: 4px; color: #ffffff; font-size: 20px; text-align: center;} */
+.gb-anchor {display: inline-block; width: 30px; height: 30px; line-height: 30px; font-size: 16px; background-color: #323e48; border-radius: 4px; color: #ffffff; text-align: center;}
+.position-relative {position: relative;}
+/* Lower footer / copyrights */
+.lower-footer { margin: 0 0 15px; padding: 20px 0 15px; border-bottom: 1px solid #e8e8e8;}
+.lf-title {color: #b51e12; font-weight: 500; text-transform: uppercase;}
+.lf-contact-details,
+.copyrights ul li a,
+.copyrights {font-weight: 500; font-size: 14px; color: #5b6770; }
+.lf-contact-details ul,
+.copyrights ul {margin: 0; padding: 0; list-style: none;}
+.lf-contact-details ul li > span {display: inline-block; min-width: 25%;}
+.lf-contact-details {margin-bottom: 10px;}
+.copyrights{ text-align: center; }
+.copyrights ul li{display: inline-block; padding: 0 5px;}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media ( min-width: 768px ) {
+    .main-banner,
+    .highest-quality,
+    .welcome-tarkhan { margin-bottom: 25px; }
+    .decor-image {
+        display: block;
+    }
+    /* Latest Products */
+    .lat-prods .xo-product-image img {width: 100%;}
+    .lat-prods .xo-product a {
+        display: block;
+        padding: 0 10px;
+    }
+    /* global products */
+    .xo-product-price {font-size: 14px; color: #b51e12;}
+    .on-sale-wrapper .xo-product-price{ color: #000; }
+    .on-sale-wrapper .xo-product-sale-price{ color: #b51e12; }
+    .xo-product-sale-price {font-size: 14px;}
+    /* welcome tarkhan */
+    .welcome-tarkhan {
+        background: #f0f0f0 url(images/about-tarkhan.jpg) center right / contain no-repeat;
+        padding: 25px 0;
+    }
+    /* On sale */
+    .on-sale-wrapper .xo-product-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: calc(100% - 35px);
+    }
+    .on-sale-wrapper .osi-sale-icon {
+        line-height: 35px;
+        width: 35px;
+        height: 40px;
+    }
+    /* Get quote */
+    .quote-images {
+        padding: 50px 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .qi-position {
+        text-align: right;
+    }
+    .qi-small-anchor {display: block;}
+    .qi-small-anchor img {max-width: 200px;}
+    /* footer */
+    .footer-nav li {
+        display: inline-block;
+        float: none;
+        width: auto;
+        padding: 0 15px;
+    }
+    .footer-top {
+        padding: 30px 0;
+    }
+    .footer-nav ul {margin-bottom: 0;}
+    .lf-logo {margin-top: 25px;}
+    .copyrights ul li {display: inline-block; padding: 0 10px;}
+    .go-back-top{ right: 10px; }
+    .copyrights{text-align: initial;}
+    .copyright_text{text-align: right;}
+    
+}
+
+@media ( min-width: 992px ) {
+.hq-tagline{ margin: 0 auto; max-width: 770px; }
+.highest-quality{padding: 85px 15px 85px 35px;}
+.di-details .inner_skin{display: inline;}
+.lower-footer{padding-bottom: 40px;}
+}
+
+@media ( min-width: 1200px ) {
+    .main-banner, .highest-quality, .welcome-tarkhan, .quote-images, .decor-blog, .footer-top {
+        margin-bottom: 45px;
+    }
+    .section-title{ margin-bottom: 40px; }
+    .quote-images { background-size: cover; }
+    .qi-small-anchor img { max-width: 350px; }
+
+    .featured-products-wrapper .section-title{text-align: center;}
+    .featured-products-wrapper .xo-product-details span.fa{
+        display: inline-block; margin-top: 10px;
+    }
+    /* featured products */
+    .featured-products-wrapper .xo-product {position: relative; margin-bottom: 30px;}
+    .featured-products-wrapper .xo-product-details {
+        position: absolute;
+        opacity: 0;
+        left: 10px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.902);
+        transition: all 0.2s linear;
+        color: #fff;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .featured-products-wrapper .xo-product-details .xo-product-price {color: #ffffff; font-size: 24px;}
+    .featured-products-wrapper .xo-product:hover .xo-product-details {opacity: 1;}
+    .featured-products-wrapper .xo-product-title {font-size: 16px;}
+    /* welcome tarkhan */
+    .highest-quality{padding: 85px 15px 100px 35px;}
+    .welcome-tarkhan {
+        padding: 100px 0;
+    }
+    .welcome-tarkhan .readmore {display: inline-block; margin-top: 30px;}
+    .footer-top {
+        padding: 50px 0;
+        
+    }
+    .lower-footer {margin-bottom: 0;}
+    .copyrights {
+        padding-bottom: 45px;
+        padding-top: 45px;
+    }
+    .copyrights p {margin: 0;}
+}
+
+@media ( min-width: 1590px ) {
+
+}
